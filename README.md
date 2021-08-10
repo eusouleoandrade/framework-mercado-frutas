@@ -14,5 +14,5 @@ Necessário: Backend em .Net e Frontend em Angular ou similar.
 
 ## Refinamento
 
-### Fluxo comunicação
+### Fluxo da comunicação dos artefatos / serviços
 
