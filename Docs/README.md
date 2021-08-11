@@ -16,4 +16,4 @@ Necessário: Backend em .Net e Frontend em Angular ou similar.
 
 ### Fluxo da comunicação dos artefatos / serviços
 
-![Modularization Layer](https://github.com/eusouleoandrade/NC/blob/master/draw.png?raw=true)
+![Modularization Layer](https://github.com/eusouleoandrade/framework-mercado-frutas/blob/main/Docs/DesenhoRefinamento.png?raw=true)
