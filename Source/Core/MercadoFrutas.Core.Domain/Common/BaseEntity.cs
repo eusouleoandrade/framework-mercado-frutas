@@ -1,8 +1,7 @@
 namespace MercadoFrutas.Core.Domain.Common
 {
-    public abstract class BaseEntity<TId>
-        where TId : struct
+    public abstract class BaseEntity
     {
-        public virtual TId Id { get; protected set; }
+        public virtual int Id { get; set; }
     }
 }

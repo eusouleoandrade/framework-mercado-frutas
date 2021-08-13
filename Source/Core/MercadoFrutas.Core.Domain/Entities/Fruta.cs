@@ -3,15 +3,15 @@ using MercadoFrutas.Core.Domain.Common;
 
 namespace MercadoFrutas.Core.Domain.Entities
 {
-    public class Fruta : BaseEntity<Guid>
+    public class Fruta : AuditableBaseEntity
     {
-        public string Nome { get; protected set; }
-        public string Descricao { get; protected set; }
-        public string Foto { get; protected set; }
-        public int Quantidade { get; protected set; }
-        public decimal Valor { get; protected set; }
+        public string Nome { get; set; }
+        public string Descricao { get; set; }
+        public string Foto { get; set; }
+        public int Quantidade { get; set; }
+        public decimal Valor { get; set; }
 
-        public Fruta(Guid id, string nome, string descricao, string foto, int quantidade, decimal valor)
+        public Fruta(int id, string nome, string descricao, string foto, int quantidade, decimal valor)
         {
             Id = id;
             Nome = nome;
@@ -22,7 +22,7 @@ namespace MercadoFrutas.Core.Domain.Entities
         }
 
         public Fruta(string nome, string descricao, string foto, int quantidade, decimal valor)
-            : this(Guid.NewGuid(), nome, descricao, foto, quantidade, valor)
+            : this(default, nome, descricao, foto, quantidade, valor)
         {
         }
     }
